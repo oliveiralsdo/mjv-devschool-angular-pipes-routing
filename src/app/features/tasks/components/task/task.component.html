@@ -10,7 +10,7 @@
       </div>
 
       <div>
-        <span>Data de Inclusão:{{ task?.inclusionDate }}</span>
+        <span>Data de Inclusão:{{ task?.inclusionDate | date }}</span>
       </div>
 
       <div class="task-status" [ngClass]="{ 'completed': task?.completed, 'uncompleted': !task?.completed }">

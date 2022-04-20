@@ -5,8 +5,11 @@ import { SharedModule } from './shared/shared.module';
 import { TasksModule } from './features/tasks/tasks.module';
 import { LoginModule } from './features/login/login.module';
 import { NgModule } from '@angular/core';
+import { LOCALE_ID } from '@angular/core';
+import localePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common';
 
-
+registerLocaleData(localePt, 'pt');
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +21,11 @@ import { NgModule } from '@angular/core';
     TasksModule,
     LoginModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, 
+      useValue: 'pt-BR' 
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

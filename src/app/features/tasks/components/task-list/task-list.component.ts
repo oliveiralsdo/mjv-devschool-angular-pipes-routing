@@ -8,37 +8,43 @@ import { Task } from '../../models/task.model';
 })
 export class TaskListComponent implements OnInit {
 
-  tasks: Array<Task> = [ 
-    { 
-      id: 1,
-      description: 'Criar um projeto básico', 
-      completed: false,
-      inclusionDate: '21 de jul. de 2021' },
-    { 
-      id: 2,
-      description: 'Colocar o lixo para fora até as 19h', 
-      completed: true,
-      inclusionDate: '22 de jul. de 2021'},
-    { 
-      id: 3,
-      description: 'Fazer o jantar até as 22h', 
-      completed: true,
-      inclusionDate: '20 de jul. de 2021'},
-    { 
-      id: 4, 
-      description: 'Reunião de alinhamento dia 18/07 as 14h', 
-      completed: true,
-      inclusionDate: '21 de jul. de 2021'}, 
-    { 
-      id: 5, 
-      description: 'Reunião de alinhamento projeto bradesco 18/07 as 16h', 
-      completed: false,
-      inclusionDate: '19 de jul. de 2021'}, 
-    { 
-      id: 6, 
-      description: 'Criar conteúdo da aula', 
-      completed: false,
-      inclusionDate: '18 de jul. de 2021'} ];
+  tasks: Array<Task> =  [ 
+  { 
+    id: 1,
+    description: 'Criar um projeto básico',
+    completed: false,
+    inclusionDate: '2021-07-21' 
+  },
+  { 
+    id: 2, 
+    description: 'Colocar o lixo para fora até as 19h', 
+    completed: true, 
+    inclusionDate: '2021-07-22'
+  }, 
+  { 
+    id: 3, 
+    description: 'Fazer o jantar até as 22h', 
+    completed: true, 
+    inclusionDate: '2021-07-20' 
+  },
+  { 
+    id: 4, 
+    description: 'Reunião de alinhamento dia 18/07 as 14h', 
+    completed: true, 
+    inclusionDate: '2021-07-21' 
+  }, 
+  { 
+    id: 5,
+    description: 'Reunião de alinhamento projeto bradesco 18/07 as 16h', 
+    completed: false, 
+    inclusionDate: '2021-07-19' 
+  }, 
+  { 
+    id: 6, 
+    description: 'Criar conteúdo da aula', 
+    completed: false, 
+    inclusionDate: '2021-07-18'
+  }];
 
     filteredTasks: Array<Task> = this.tasks;
 
