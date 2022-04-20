@@ -1,0 +1,26 @@
+.navigation-menu {
+    width: 100%;
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        background-color: rgba(230,230,250);
+        align-items: center;
+        padding: 0; 
+    }   
+        li {
+            list-style: none;
+            width: 80px;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+            color: rgb(75,0,130);
+            border-radius: 8px;
+            height: 40px;
+            cursor: pointer;
+            text-align: center;
+            padding: 10px;
+        }
+        
+}

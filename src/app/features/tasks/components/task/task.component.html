@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="container-main">
+    <div class="container-tasks">
+      <div class="id">
+        <span>ID: {{ task?.id }}</span>
+      </div>
+
+      <div>
+        <span class="desc">{{ task?.description }}</span>
+      </div>
+
+      <div>
+        <span>Data de Inclusão:{{ task?.inclusionDate }}</span>
+      </div>
+
+      <div class="task-status" [ngClass]="{ 'completed': task?.completed, 'uncompleted': !task?.completed }">
+        <span class="button-completed" (click)="updateCompleted()">
+          {{ task?.completed }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
